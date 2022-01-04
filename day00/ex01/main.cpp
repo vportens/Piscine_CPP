@@ -3,16 +3,10 @@
 #include "Contact.hpp"
 #include "Phone_book.hpp"
 
-Contact	add_contact(void)
-{
-	Contact bob;
-
-	return (bob);
-}
 
 int	main(int ac, char *av[])
 {
-	char	buff[1096];
+	std::string	buff;
 	std::string	add ("ADD");
 	std::string	search ("SEARCH");
 	std::string	exit ("EXIT");
@@ -22,12 +16,14 @@ int	main(int ac, char *av[])
 	while (1)
 	{
 		std::cout << "Are you looking for ADD, SEARCH, EXIT?" << std::endl;	
-		std::cin >> buff;
+		std::getline (std::cin,buff);
+		if (std::cin.eof())
+			return (1);
 		str = buff;
 		if (str.compare(add) == 0)
 		{
 			
-			add_contact();
+			obj.add_contact();
 
 		}
 		else if (str.compare(exit) == 0)
@@ -35,7 +31,8 @@ int	main(int ac, char *av[])
 		else if (str.compare(search) == 0)
 		{
 
-			std::cout << "search" << std::endl;
+
+			obj.print_contact();
 		}
 		else
 		{

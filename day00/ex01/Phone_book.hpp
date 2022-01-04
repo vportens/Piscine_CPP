@@ -7,16 +7,15 @@ class Phone_book {
 
 private:
 	Contact lst[8];	
-	static int i;
 
+	int i;
 
 public:
-	Phone_book( void )
-	{
-		for (int i=0; i < 8; i++)
-			this->lst[i] = NULL;
-		this->i = 0;
-	}
+	Phone_book( void );
+
+	
+	void	add_contact(void);
+	void	print_contact(void);
 
 };
 
