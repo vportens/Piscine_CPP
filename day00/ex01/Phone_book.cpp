@@ -3,8 +3,6 @@
 #include <sstream>
 
 Phone_book::Phone_book(void) {
-//	for (int i=0; i < 8; i++)
-//	this->lst[i] = NULL;
 	this->i = 0;
 
 }
@@ -26,6 +24,11 @@ void	Phone_book::print_contact(void) {
 	std::string	buff;
 
 	i = 0;
+	if (this->i == 0)
+	{
+		std::cout << "aucun contact enregiste" << std::endl;
+		return ;
+	}
 	while (i < this->i)
 	{
 		std::cout << "|         " << i<< "|";
@@ -40,6 +43,8 @@ void	Phone_book::print_contact(void) {
 	while (1)
 	{
 		std::getline (std::cin,buff);
+		if (std::cin.eof())
+			return ;
 
 	if (buff.length() == 1 && buff[0] >= '0' && buff[0] <= '9')
 	{

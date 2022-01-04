@@ -18,17 +18,25 @@ void	Contact::add_contact(void) {
 	this->first_name = buff;
 	std::cout << "Last name please" << std::endl;
 	std::getline (std::cin, buff);
+	if (std::cin.eof())
+		return ;
 	this->last_name = buff;
 	std::cout << "Know it's time for the real OG name of your homis" << std::endl;
 	std::getline (std::cin, buff);
+	if (std::cin.eof())
+		return ;
 	this->nickname = buff;
 	std::cout << "Never forget he's lil secret in case you need services" << std::endl;
 	std::getline (std::cin, buff);
+	if (std::cin.eof())
+		return ;
 	this->secret = buff;
 	std::cout << "Phone number please, in case you want pass a call" << std::endl;
 	while (1)
 	{
 		std::getline (std::cin, buff);
+		if (std::cin.eof())
+			return ;
 		if (this->is_digit(buff))
 			break;
 		std::cout << "Digit only for phonenumber" << std::endl;
