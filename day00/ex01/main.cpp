@@ -4,7 +4,7 @@
 #include "Phone_book.hpp"
 
 
-int	main(int ac, char *av[])
+int	main(void)
 {
 	std::string	buff;
 	std::string	add ("ADD");

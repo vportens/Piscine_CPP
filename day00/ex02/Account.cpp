@@ -24,17 +24,13 @@ Account::Account(int initial_deposit) {
 
 }
 
-Account::Account(void) {
-
-}
-
-
+Account::Account(void) {}
 
 void	Account::makeDeposit( int deposit) {
 	if (deposit <= 0)
 	{
 	Account::_displayTimestamp();
-	std::cout << "sorry we accept only money to get inside, not ouside, for a deposit" << std::endl;
+	std::cout << "index:" << this->_accountIndex << ";p_amount:" << this->_amount << ";deposit:" << "refused" << std::endl;
 	return;
 	
 	}
@@ -89,7 +85,7 @@ void	Account::displayAccountsInfos( void ){
 }
 
 bool	Account::makeWithdrawal(int withdrawal) {
-	if (this->_amount >= withdrawal)
+	if (this->_amount >= withdrawal && withdrawal > 0)
 	{
 	Account::_displayTimestamp();
 		std::cout << "index:" << this->_accountIndex << ";p_amount:" << this->_amount << ";withdrawal:" << withdrawal << ";amount:" << this->_amount - withdrawal << ";nb_withdrawals:" << this->_nbWithdrawals + 1 << std::endl;
