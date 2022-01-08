@@ -1,0 +1,165 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACCOUNT_H	day00/ex02/Account.hpp	/^#define ACCOUNT_H$/;"	d
+Account	day00/ex02/Account.cpp	/^Account::Account(int initial_deposit) {$/;"	f	class:Account
+Account	day00/ex02/Account.cpp	/^Account::Account(void) {}$/;"	f	class:Account
+Account	day00/ex02/Account.hpp	/^class Account {$/;"	c
+CC	day00/ex00/Makefile	/^CC        = clang++$/;"	m
+CC	day00/ex01/Makefile	/^CC        = clang++$/;"	m
+CC	day00/ex02/Makefile	/^CC        = clang++$/;"	m
+CC	day01/ex00/Makefile	/^CC        = clang++$/;"	m
+CC	day01/ex01/Makefile	/^CC        = clang++$/;"	m
+CC	day01/ex02/Makefile	/^CC        = clang++$/;"	m
+CC	day01/ex03/Makefile	/^CC        = clang++$/;"	m
+CC	day01/ex04/Makefile	/^CC        = clang++$/;"	m
+CONTACT_H	day00/ex01/Contact.hpp	/^# define CONTACT_H$/;"	d
+CPPFLAG	day00/ex00/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day00/ex01/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day00/ex02/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day01/ex00/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day01/ex01/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day01/ex02/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day01/ex03/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+CPPFLAG	day01/ex04/Makefile	/^CPPFLAG    = -Wall -Wextra -Werror -std=c++98$/;"	m
+Contact	day00/ex01/Contact.hpp	/^class Contact {$/;"	c
+HUMANA_H	day01/ex03/HumanA.hpp	/^# define HUMANA_H$/;"	d
+HUMANB_H	day01/ex03/HumanB.hpp	/^# define HUMANB_H$/;"	d
+HumanA	day01/ex03/HumanA.cpp	/^HumanA::HumanA(std::string name, Weapon& weapon) : _name(name), _weapon(weapon){$/;"	f	class:HumanA
+HumanA	day01/ex03/HumanA.hpp	/^class	HumanA {$/;"	c
+HumanB	day01/ex03/HumanB.cpp	/^HumanB::HumanB(std::string name) : _name(name), _weapon(NULL) {$/;"	f	class:HumanB
+HumanB	day01/ex03/HumanB.hpp	/^class	HumanB {$/;"	c
+INC_DIR	day00/ex00/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day00/ex01/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day00/ex02/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day01/ex00/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day01/ex01/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day01/ex02/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day01/ex03/Makefile	/^INC_DIR        =    incs$/;"	m
+INC_DIR	day01/ex04/Makefile	/^INC_DIR        =    incs$/;"	m
+NAME	day00/ex00/Makefile	/^NAME    = megaphone$/;"	m
+NAME	day00/ex01/Makefile	/^NAME    = PhoneBook$/;"	m
+NAME	day00/ex02/Makefile	/^NAME    = Banque$/;"	m
+NAME	day01/ex00/Makefile	/^NAME    = ZombieCreator$/;"	m
+NAME	day01/ex01/Makefile	/^NAME    = ZombieHordeCreator$/;"	m
+NAME	day01/ex02/Makefile	/^NAME    = Printer$/;"	m
+NAME	day01/ex03/Makefile	/^NAME    = ArmedHumanToFight$/;"	m
+NAME	day01/ex04/Makefile	/^NAME    = SearchAndReplace$/;"	m
+OBJS	day00/ex00/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day00/ex01/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day00/ex02/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day01/ex00/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day01/ex01/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day01/ex02/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day01/ex03/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJS	day01/ex04/Makefile	/^OBJS    = $(addprefix $(OBJ_DIR)\/, $(SRCS:%.cpp=%.o))$/;"	m
+OBJ_DIR	day00/ex00/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day00/ex01/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day00/ex02/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day01/ex00/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day01/ex01/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day01/ex02/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day01/ex03/Makefile	/^OBJ_DIR     =   objs$/;"	m
+OBJ_DIR	day01/ex04/Makefile	/^OBJ_DIR     =   objs$/;"	m
+Phone_book	day00/ex01/Phone_book.cpp	/^Phone_book::Phone_book(void) {$/;"	f	class:Phone_book
+Phone_book	day00/ex01/Phone_book.hpp	/^class Phone_book {$/;"	c
+Phone_book_H	day00/ex01/Phone_book.hpp	/^# define Phone_book_H$/;"	d
+SRCS	day00/ex00/Makefile	/^SRCS =    megaphone.cpp    $/;"	m
+SRCS	day00/ex01/Makefile	/^SRCS =   Contact.cpp	\\$/;"	m
+SRCS	day00/ex02/Makefile	/^SRCS =   Account.cpp	\\$/;"	m
+SRCS	day01/ex00/Makefile	/^SRCS =   Zombie.cpp	\\$/;"	m
+SRCS	day01/ex01/Makefile	/^SRCS =   Zombie.cpp	\\$/;"	m
+SRCS	day01/ex02/Makefile	/^SRCS =   main.cpp	$/;"	m
+SRCS	day01/ex03/Makefile	/^SRCS =   HumanA.cpp	\\$/;"	m
+SRCS	day01/ex04/Makefile	/^SRCS =  main.cpp 	$/;"	m
+SRC_DIR	day00/ex00/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day00/ex01/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day00/ex02/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day01/ex00/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day01/ex01/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day01/ex02/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day01/ex03/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+SRC_DIR	day01/ex04/Makefile	/^SRC_DIR     =    $(shell find . -type d)$/;"	m
+WEAPON_H	day01/ex03/Weapon.hpp	/^# define WEAPON_H$/;"	d
+Weapon	day01/ex03/Weapon.cpp	/^Weapon::Weapon(std::string weapon) {$/;"	f	class:Weapon
+Weapon	day01/ex03/Weapon.cpp	/^Weapon::Weapon(void){$/;"	f	class:Weapon
+Weapon	day01/ex03/Weapon.hpp	/^class Weapon {$/;"	c
+ZOMBIE_H	day01/ex00/Zombie.hpp	/^# define ZOMBIE_H$/;"	d
+ZOMBIE_H	day01/ex01/Zombie.hpp	/^# define ZOMBIE_H$/;"	d
+Zombie	day01/ex00/Zombie.cpp	/^Zombie::Zombie(std::string name) : _name(name) {$/;"	f	class:Zombie
+Zombie	day01/ex00/Zombie.hpp	/^class Zombie {$/;"	c
+Zombie	day01/ex01/Zombie.cpp	/^Zombie::Zombie(std::string name) : _name(name) {$/;"	f	class:Zombie
+Zombie	day01/ex01/Zombie.cpp	/^Zombie::Zombie(void) {$/;"	f	class:Zombie
+Zombie	day01/ex01/Zombie.hpp	/^class Zombie {$/;"	c
+_accountIndex	day00/ex02/Account.hpp	/^	int				_accountIndex;$/;"	m	class:Account
+_amount	day00/ex02/Account.hpp	/^	int				_amount;$/;"	m	class:Account
+_displayTimestamp	day00/ex02/Account.cpp	/^void	Account::_displayTimestamp(void)$/;"	f	class:Account
+_name	day01/ex00/Zombie.hpp	/^		std::string	_name;$/;"	m	class:Zombie
+_name	day01/ex01/Zombie.hpp	/^		std::string	_name;$/;"	m	class:Zombie
+_name	day01/ex03/HumanA.hpp	/^		std::string	_name;$/;"	m	class:HumanA
+_name	day01/ex03/HumanB.hpp	/^		std::string _name;$/;"	m	class:HumanB
+_name	day01/ex03/Weapon.hpp	/^		std::string	_name;$/;"	m	class:Weapon
+_nbAccounts	day00/ex02/Account.cpp	/^int	Account::_nbAccounts = 0;$/;"	m	class:Account	file:
+_nbAccounts	day00/ex02/Account.hpp	/^	static int	_nbAccounts;$/;"	m	class:Account
+_nbDeposits	day00/ex02/Account.hpp	/^	int				_nbDeposits;$/;"	m	class:Account
+_nbWithdrawals	day00/ex02/Account.hpp	/^	int				_nbWithdrawals;$/;"	m	class:Account
+_totalAmount	day00/ex02/Account.cpp	/^int	Account::_totalAmount = 0;$/;"	m	class:Account	file:
+_totalAmount	day00/ex02/Account.hpp	/^	static int	_totalAmount;$/;"	m	class:Account
+_totalNbDeposits	day00/ex02/Account.cpp	/^int	Account::_totalNbDeposits = 0;$/;"	m	class:Account	file:
+_totalNbDeposits	day00/ex02/Account.hpp	/^	static int	_totalNbDeposits;$/;"	m	class:Account
+_totalNbWithdrawals	day00/ex02/Account.cpp	/^int	Account::_totalNbWithdrawals = 0;$/;"	m	class:Account	file:
+_totalNbWithdrawals	day00/ex02/Account.hpp	/^	static int	_totalNbWithdrawals;$/;"	m	class:Account
+_weapon	day01/ex03/HumanA.hpp	/^		Weapon&	_weapon;$/;"	m	class:HumanA
+_weapon	day01/ex03/HumanB.hpp	/^		Weapon* 	_weapon;$/;"	m	class:HumanB
+add_contact	day00/ex01/Contact.cpp	/^void	Contact::add_contact(void) {$/;"	f	class:Contact
+add_contact	day00/ex01/Phone_book.cpp	/^void	Phone_book::add_contact(void) {$/;"	f	class:Phone_book
+annonce	day01/ex00/Zombie.cpp	/^void	Zombie::annonce(void) {$/;"	f	class:Zombie
+annonce	day01/ex01/Zombie.cpp	/^void	Zombie::annonce(void) {$/;"	f	class:Zombie
+attack	day01/ex03/HumanA.cpp	/^void	HumanA::attack(void) {$/;"	f	class:HumanA
+attack	day01/ex03/HumanB.cpp	/^void	HumanB::attack( void ) {$/;"	f	class:HumanB
+displayAccountsInfos	day00/ex02/Account.cpp	/^void	Account::displayAccountsInfos( void ){$/;"	f	class:Account
+displayStatus	day00/ex02/Account.cpp	/^void	Account::displayStatus( void ) const{$/;"	f	class:Account
+first_name	day00/ex01/Contact.hpp	/^		std::string	first_name;$/;"	m	class:Contact
+getNbAccounts	day00/ex02/Account.cpp	/^int	Account::getNbAccounts(void) {$/;"	f	class:Account
+getNbDeposits	day00/ex02/Account.cpp	/^int	Account::getNbDeposits( void ) {$/;"	f	class:Account
+getNbWithdrawals	day00/ex02/Account.cpp	/^int	Account::getNbWithdrawals( void ) {$/;"	f	class:Account
+getTotalAmount	day00/ex02/Account.cpp	/^int	Account::getTotalAmount( void ) {$/;"	f	class:Account
+getType	day01/ex03/Weapon.cpp	/^const	std::string&	Weapon::getType( void ){$/;"	f	class:Weapon
+i	day00/ex01/Phone_book.hpp	/^	int i;$/;"	m	class:Phone_book
+is_digit	day00/ex01/Contact.cpp	/^bool	Contact::is_digit(std::string& s)$/;"	f	class:Contact
+is_name	day01/ex01/Zombie.cpp	/^void	Zombie::is_name(std::string name) {$/;"	f	class:Zombie
+last_name	day00/ex01/Contact.hpp	/^		std::string	last_name;$/;"	m	class:Contact
+lst	day00/ex01/Phone_book.hpp	/^	Contact lst[8];	$/;"	m	class:Phone_book
+main	day00/ex00/megaphone.cpp	/^int	main(int ac, char *av[])$/;"	f
+main	day00/ex01/main.cpp	/^int	main(void)$/;"	f
+main	day00/ex02/tests.cpp	/^int		main( void ) {$/;"	f
+main	day01/ex00/main.cpp	/^int main(void)$/;"	f
+main	day01/ex01/main.cpp	/^int main(void)$/;"	f
+main	day01/ex02/main.cpp	/^int	main(void)$/;"	f
+main	day01/ex03/main.cpp	/^int main()$/;"	f
+main	day01/ex04/main.cpp	/^int main(int ac, char *av[])$/;"	f
+makeDeposit	day00/ex02/Account.cpp	/^void	Account::makeDeposit( int deposit) {$/;"	f	class:Account
+makeWithdrawal	day00/ex02/Account.cpp	/^bool	Account::makeWithdrawal(int withdrawal) {$/;"	f	class:Account
+newZombie	day01/ex00/newZombie.cpp	/^Zombie*	newZombie(std::string name) {$/;"	f
+nickname	day00/ex01/Contact.hpp	/^		std::string	nickname;$/;"	m	class:Contact
+phone_number	day00/ex01/Contact.hpp	/^		std::string	phone_number;$/;"	m	class:Contact
+print_contact	day00/ex01/Phone_book.cpp	/^void	Phone_book::print_contact(void) {$/;"	f	class:Phone_book
+print_inf	day00/ex01/Contact.cpp	/^void	Contact::print_inf(void) {$/;"	f	class:Contact
+print_last	day00/ex01/Contact.cpp	/^void	Contact::print_last(void) {$/;"	f	class:Contact
+print_name	day00/ex01/Contact.cpp	/^void	Contact::print_name(void) {$/;"	f	class:Contact
+print_nick	day00/ex01/Contact.cpp	/^void	Contact::print_nick(void) {$/;"	f	class:Contact
+randomChump	day01/ex00/randomChump.cpp	/^void	randomChump(std::string name) {$/;"	f
+secret	day00/ex01/Contact.hpp	/^		std::string	secret;$/;"	m	class:Contact
+setType	day01/ex03/Weapon.cpp	/^void	Weapon::setType(std::string name) {$/;"	f	class:Weapon
+setWeapon	day01/ex03/HumanB.cpp	/^void	HumanB::setWeapon(Weapon weapon){$/;"	f	class:HumanB
+t	day00/ex02/Account.hpp	/^	typedef Account		t;$/;"	t	class:Account
+zombieHorde	day01/ex01/ZombieHorde.cpp	/^Zombie* zombieHorde(int n, std::string name ) {$/;"	f
+~Account	day00/ex02/Account.cpp	/^Account::~Account( void ) {$/;"	f	class:Account
+~HumanA	day01/ex03/HumanA.cpp	/^HumanA::~HumanA(){$/;"	f	class:HumanA
+~HumanB	day01/ex03/HumanB.cpp	/^HumanB::~HumanB() {$/;"	f	class:HumanB
+~Weapon	day01/ex03/Weapon.cpp	/^Weapon::~Weapon(void){$/;"	f	class:Weapon
+~Zombie	day01/ex00/Zombie.cpp	/^Zombie::~Zombie(void) {$/;"	f	class:Zombie
+~Zombie	day01/ex01/Zombie.cpp	/^Zombie::~Zombie(void) {$/;"	f	class:Zombie
