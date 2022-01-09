@@ -44,4 +44,6 @@ club.setType("some other type of club");
 jim.attack();
 
 }
+	HumanB tod("Tod");
+tod.attack();
 }

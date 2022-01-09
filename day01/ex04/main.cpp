@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <string.h>
 
 int main(int ac, char *av[])
 {
@@ -13,9 +14,14 @@ int main(int ac, char *av[])
 	std::string	namefile = av[1];
 	std::string	new_name = ".replace";
 	new_name = namefile + new_name;
+	
+	int len = new_name.length();
+	char replace_name[len + 1];
 
-	std::ifstream	ifs(namefile);
-	std::ofstream	ofs(new_name);
+	strcpy(replace_name, new_name.c_str());	
+
+	std::ifstream	ifs(av[1]);
+	std::ofstream	ofs(replace_name);
 
 	std::string	contents;
 	std::string	s1 = av[2];

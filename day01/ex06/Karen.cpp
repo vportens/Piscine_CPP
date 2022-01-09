@@ -7,10 +7,10 @@ Karen::Karen() {
 void	Karen::complain(std::string level) {
 	
 	std::string tab_complain[5] = {
-	"debug",
-	"infos",
-	"error",
-	"warning",
+	"DEBUG",
+	"INFOS",
+	"WARNING",
+	"ERROR",
 	"default"
 	};
 
@@ -21,18 +21,21 @@ void	Karen::complain(std::string level) {
 		switch	(i) {
 		case 	0 :
 			debug();
-			return ;
-		case  	3 :
-			warning();
-			return ;
+			std::cout << std::endl;
 		case  	1 :	
 			infos();
-			return ;
-		case 	2 :
+			std::cout << std::endl;
+		case  	2 :
+			warning();
+			std::cout << std::endl;
+		case 	3 :
+			if (i != 3)
 			error();
+			std::cout << std::endl;
 			return ;
 		default :
 			classic();
+			std::cout << std::endl;
 			return ;
 		}
 		}

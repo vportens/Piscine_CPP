@@ -5,8 +5,7 @@ HumanB::HumanB(std::string name) : _name(name), _weapon(NULL) {
 }
 
 void	HumanB::setWeapon(Weapon weapon){
-	_weapon = &weapon;
-
+	_weapon = new Weapon(weapon.getType());
 }
 
 void	HumanB::attack( void ) {
@@ -19,5 +18,6 @@ void	HumanB::attack( void ) {
 }
 
 HumanB::~HumanB() {
-
+	if (_weapon)
+		delete _weapon;
 }
