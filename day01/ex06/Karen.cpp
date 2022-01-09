@@ -29,7 +29,6 @@ void	Karen::complain(std::string level) {
 			warning();
 			std::cout << std::endl;
 		case 	3 :
-			if (i != 3)
 			error();
 			std::cout << std::endl;
 			return ;

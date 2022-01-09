@@ -6,12 +6,12 @@ int main(int ac, char *av[])
 
 	if (ac == 1)
 {
-		std::cout << "Look there is a Karen in the wild, don't make noise or she will see use end start complaining at us" << std::endl;
+		std::cerr << "Look there is a Karen in the wild, don't make noise or she will see use end start complaining at us" << std::endl;
 		return (1);
 }
 	if (ac > 2)
 {
-	std::cout << "To much comment from Karen, we can't treat this much informations" << std::endl;
+	std::cerr << "To much comment from Karen, we can't treat this much informations" << std::endl;
 	return (1);
 }
 	karen.complain(av[1]);
