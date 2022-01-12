@@ -1,10 +1,13 @@
 #include "ClapTrap.hpp"
+#define HP 10
+#define EP 10
+#define AD 0
 
-ClapTrap::ClapTrap(void) : Name("HenryDefault"), Hitpoints(10), EnergyPoints(10), AttackDamage(0) {
+ClapTrap::ClapTrap(void) : Name("HenryDefault"), Hitpoints(HP), EnergyPoints(EP), AttackDamage(AD) {
 	std::cout << "default constructor call" << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string const &name) : Name(name), Hitpoints(10), EnergyPoints(10), AttackDamage(0) {
+ClapTrap::ClapTrap(std::string const &name) : Name(name), Hitpoints(HP), EnergyPoints(EP), AttackDamage(AD) {
 	std::cout << "string constructor call" << std::endl;
 }
 
@@ -33,9 +36,10 @@ void	ClapTrap::beRepaired(unsigned int amount) {
 }
 
 ClapTrap&	ClapTrap::operator=(ClapTrap const & cpy) {
-	this->Name = cpy->Name;
-	this->Hitpoints = cpy->Hitpoints;
-	this->EnergyPoints = cpy->EnergyPoints;
-	this->AttackDomage = cpy->AttackDomage;
+	this->Name = cpy.Name;
+	this->Hitpoints = cpy.Hitpoints;
+	this->EnergyPoints = cpy.EnergyPoints;
+	this->AttackDamage = cpy.AttackDamage;
 	return (*this);
 }
+

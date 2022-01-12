@@ -2,5 +2,13 @@
 
 int main()
 {
-	ScavTrap roger = ScavTrap("roger");
+	ScavTrap tourdecontrol;
+	ScavTrap roger("roger");
+	roger.attack("tourDeControl");
+	tourdecontrol.attack("none");
+	tourdecontrol = roger;
+	tourdecontrol.attack("ordinateur");
+	
+	ScavTrap last(tourdecontrol);
+	last.attack("ecrant");
 }
