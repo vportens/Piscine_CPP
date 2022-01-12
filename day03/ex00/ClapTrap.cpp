@@ -33,9 +33,9 @@ void	ClapTrap::beRepaired(unsigned int amount) {
 }
 
 ClapTrap&	ClapTrap::operator=(ClapTrap const & cpy) {
-	this->Name = cpy->Name;
-	this->Hitpoints = cpy->Hitpoints;
-	this->EnergyPoints = cpy->EnergyPoints;
-	this->AttackDomage = cpy->AttackDomage;
+	this->Name = cpy.Name;
+	this->Hitpoints = cpy.Hitpoints;
+	this->EnergyPoints = cpy.EnergyPoints;
+	this->AttackDamage = cpy.AttackDamage;
 	return (*this);
 }
