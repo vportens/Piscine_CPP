@@ -9,11 +9,12 @@ SRC_DIR     =    $(shell find . -type d)
 vpath %.cpp $(foreach dir, $(SRC_DIR), $(dir):)
 
 SRCS =   main.cpp	\
-	Cat.cpp		\
-	Dog.cpp		\
-	Animal.cpp	\
-	WrongAnimal.cpp	\
-	WrongCat.cpp	\
+	AMateria.cpp	\
+	Ice.cpp		\
+	Cure.cpp		\
+	MateriaSource.cpp	\
+	Character.cpp
+
 
 # --  Redirection in OBJS  -- #
 OBJS    = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))

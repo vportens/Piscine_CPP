@@ -14,6 +14,7 @@ SRCS =   main.cpp	\
 	Animal.cpp	\
 	WrongAnimal.cpp	\
 	WrongCat.cpp	\
+	Brain.cpp	
 
 # --  Redirection in OBJS  -- #
 OBJS    = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
