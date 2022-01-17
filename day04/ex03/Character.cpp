@@ -25,8 +25,7 @@ Character::Character(Character const & cpy) {
 			slot[i] = cpy.slot[i]->clone(); 
 	
 	}
-	index = cpy.index;
-	name = cpy.name;
+	name = cpy.getName();
 }
 
 Character::~Character() {
@@ -46,8 +45,7 @@ Character* 	Character::operator=(Character const & cpy){
 			slot[i] = cpy.slot[i]->clone(); 
 	
 	}
-	index = cpy.index;
-	name = cpy.name;
+	name = cpy.getName();
 	return (this);
 
 }

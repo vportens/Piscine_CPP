@@ -16,13 +16,15 @@ WrongAnimal	*k = new WrongCat();
 WrongAnimal	*met = new WrongAnimal();
 
 	Cat a = Cat();
-	Cat cpy = Cat(a);
+	Cat* cpy = new Cat(a);
 
 a.makeSound();
-cpy.makeSound();
+cpy->makeSound();
 
 a.printmemori();
 cpy.printmemori();
+
+delete cpy;
 
 std::cout << j->getType() << " " << std::endl;
 std::cout << i->getType() << " " << std::endl;

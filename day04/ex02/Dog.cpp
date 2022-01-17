@@ -8,8 +8,7 @@ Dog::Dog(): Animal() {
 
 
 Dog::Dog(Dog const & cpy) : Animal(cpy) {
-	cerveau = new Brain;
-	cerveau = cpy.cerveau;
+	cerveau = new Brain(*cpy.cerveau);
 	type = cpy.type;
 	std::cout << "Copy constructor Dog" << std::endl;
 }

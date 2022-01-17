@@ -15,13 +15,18 @@ WrongAnimal	*k = new WrongCat();
 WrongAnimal	*met = new WrongAnimal();
 
 	Cat a = Cat();
-	Cat cpy = Cat(a);
+	
+	// Animal* test = new Dog(a);
+
+	// test->makeSound();
+
+	 Cat cpy = Cat(a);
 
 a.makeSound();
-cpy.makeSound();
+ cpy.makeSound();
 
-a.printmemori();
-cpy.printmemori();
+// a.printmemori();
+// cpy.printmemori();
 
 std::cout << j->getType() << " " << std::endl;
 std::cout << i->getType() << " " << std::endl;

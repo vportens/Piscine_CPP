@@ -13,6 +13,18 @@ int main()
 WrongAnimal	*k = new WrongCat();
 WrongAnimal	*met = new WrongAnimal();
 
+{
+	Animal* cpy = j;
+	Animal* dp = new Animal(*cpy);
+
+
+
+	dp->makeSound();
+
+	delete(dp);
+	cpy->makeSound();
+}
+
 std::cout << j->getType() << " " << std::endl;
 std::cout << i->getType() << " " << std::endl;
 i->makeSound(); //will output the cat sound!

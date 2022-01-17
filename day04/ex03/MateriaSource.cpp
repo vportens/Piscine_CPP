@@ -15,7 +15,11 @@ MateriaSource::MateriaSource(MateriaSource const & cpy) {
 }
 
 MateriaSource::~MateriaSource() {
-
+	for (int i = 0; i < 4; i++)
+		{
+			if (slot[i])
+				delete slot[i];
+		}
 }
 
 MateriaSource & MateriaSource::operator=(MateriaSource const & cpy) {
