@@ -46,7 +46,7 @@ std::string Form::getTarget(void) const{
 	return (_target);
 }
 
-void	Form::execution(Bureaucrat const & executor) const{
+void	Form::execute(Bureaucrat const & executor) const{
 	if (is_sign() == 0)
 	{
 		throw (Form::NotSignedException());

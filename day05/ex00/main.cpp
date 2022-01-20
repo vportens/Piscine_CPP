@@ -17,6 +17,7 @@ int main()
 	}
 	try {
 		Bureaucrat Ron("Ron", 150);
+		std::cout << Ron << std::endl;
 		std::cout << Ron.getName() << " grade " << Ron.getGrade() << std::endl;
 		Ron.upGrade();
 		std::cout << Ron.getName() << " grade " << Ron.getGrade() << std::endl;
@@ -24,6 +25,7 @@ int main()
 		std::cout << Ron.getName() << " grade " << Ron.getGrade() << std::endl;
 		Ron.downGrade();
 		std::cout << Ron.getName() << " grade " << Ron.getGrade() << std::endl;
+		std::cout << Ron;
 	}
 
 	catch (Bureaucrat::Exception &e) {

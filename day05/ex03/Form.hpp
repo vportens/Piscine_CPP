@@ -28,7 +28,7 @@ class Form {
 		std::string	getName() const;
 		std::string	getTarget()const ;
 
-		void		execution(Bureaucrat const & executor)const;
+		void		execute(Bureaucrat const & executor)const;
 		virtual void	Action(std::string const & target)const = 0;
 
 		void		beSigned(Bureaucrat & inCharge);

@@ -61,7 +61,7 @@ void		Bureaucrat::downGrade(void) {
 
 void	Bureaucrat::executeForm(Form const & form) {
 	if (form.is_sign() && _grade < form.getGradeExec())
-		form.execution(*this);
+		form.execute(*this);
 }
 
 std::ostream&	operator<<(std::ostream & out, Bureaucrat const & me) {

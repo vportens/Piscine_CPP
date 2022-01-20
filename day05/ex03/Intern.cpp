@@ -26,15 +26,18 @@ Form*	Intern::makeForm(std::string const & name, std::string const & target) {
 {
 	switch (i) {
 	case 0 :
+		std::cout << "Intern creates " << name  << std::endl;
 		return (new RobotomyRequestForm(target));
 		break;
 	case 1 :
+		std::cout << "Intern creates " << name  << std::endl;
 		return (new PresidentialPardonForm(target));
 	case 2 :
+		std::cout << "Intern creates " << name  << std::endl;
 		return (new ShrubberyCreationForm(target));
 		break;
 	case 3 : 
-		std::cout << "need a form I create" << std::endl;
+		std::cout << "need a form I can create" << std::endl;
 		return (0);
 		break;
 	}
