@@ -23,8 +23,9 @@ RobotomyRequestForm & RobotomyRequestForm::operator=(RobotomyRequestForm const &
 	return (*this);
 }
 
-void	RobotomyRequestForm::Action(std::string const & target) {
+void	RobotomyRequestForm::Action(std::string const & target) const {
 	std::cout << "* zzzzzzziiiiiiiiiiiipppppppppppp *" << std::endl;
+	srand(time(NULL));
 	if (rand() % 2)
 {
 		std::cout << "<" << target << "> a bien etait robotomizee" << std::endl;

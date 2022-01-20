@@ -46,9 +46,12 @@ std::string Form::getTarget(void) const{
 	return (_target);
 }
 
-void	Form::execution(Bureaucrat const & executor) {
+void	Form::execution(Bureaucrat const & executor) const{
 	if (is_sign() == 0)
+	{
+	//	throw (Form::NotSignedException());
 		return ;
+	}
 	if (executor.getGrade() > getGradeExec())
 		return ;
 	Action(_target);
@@ -81,4 +84,8 @@ const char* Form::GradeTooLowException::what() const throw() {
 
 const char* Form::GradeTooHighException::what() const throw() {
 	return ("Grade must be >= 1 !!!");
+}
+
+const char* Form::NotSignedException::what() const throw() {
+	return ("Form not Signed!!!");
 }

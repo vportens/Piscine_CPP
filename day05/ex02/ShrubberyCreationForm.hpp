@@ -11,7 +11,7 @@ class ShrubberyCreationForm : public Form {
 		
 		ShrubberyCreationForm & operator=(ShrubberyCreationForm const & cpy); 
 
-		void	Action(std::string const & target);
+		void	Action(std::string const & target)const;
 };
 
 

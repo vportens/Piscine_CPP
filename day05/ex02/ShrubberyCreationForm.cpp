@@ -22,7 +22,7 @@ ShrubberyCreationForm & ShrubberyCreationForm::operator=(ShrubberyCreationForm c
 	return (*this);
 }
 
-void	ShrubberyCreationForm::Action(std::string const & target) {
+void	ShrubberyCreationForm::Action(std::string const & target)const {
 	std::string filename = "_shrubbery";
 	filename = getTarget() + filename;
 	char const *test = filename.c_str();

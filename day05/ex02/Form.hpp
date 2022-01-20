@@ -18,7 +18,7 @@ class Form {
 		Form();
 		Form(Form const & cpy);
 		Form(std::string Name, int GradeSign, int GradeExec, std::string target);
-		~Form();
+		virtual ~Form();
 
 		Form & operator=(Form const & cpy);
 
@@ -28,8 +28,8 @@ class Form {
 		std::string	getName() const;
 		std::string	getTarget()const ;
 
-		void		execution(Bureaucrat const & executor);
-		virtual void	Action(std::string const & target) = 0;
+		void		execution(Bureaucrat const & executor)const;
+		virtual void	Action(std::string const & target)const = 0;
 
 		void		beSigned(Bureaucrat & inCharge);
 
@@ -45,6 +45,11 @@ class Form {
 			public :
 				virtual const char * what() const throw();
 		};
+
+		class NotSignedException: public Form::Exception {
+			public :
+				virtual const char * what() const throw();
+		};		
 };
 
 std::ostream&	operator<<(std::ostream & out, Form const & value);

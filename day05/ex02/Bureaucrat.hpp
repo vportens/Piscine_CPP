@@ -25,6 +25,8 @@ class Bureaucrat {
 		void			downGrade();
 		void			signForm(Form to_sign);
 
+		void	executeForm (Form const & form);
+
 		class Exception : public std::exception {
 			public :
 				virtual const char * what() const throw();

@@ -59,6 +59,11 @@ void		Bureaucrat::downGrade(void) {
 	_grade++;
 }
 
+void	Bureaucrat::executeForm(Form const & form) {
+	if (form.is_sign() && _grade < form.getGradeExec())
+		form.execution(*this);
+}
+
 std::ostream&	operator<<(std::ostream & out, Bureaucrat const & me) {
 	out << "<" <<  me.getName() << ">,  bureaucrat grade <" << me.getGrade() << ">";
 	return (out);
