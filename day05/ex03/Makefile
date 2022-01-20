@@ -13,6 +13,7 @@ SRCS =   main.cpp	\
 	Form.cpp	\
 	ShrubberyCreationForm.cpp	\
 	RobotomyRequestForm.cpp		\
+	Intern.cpp			\
 	PresidentialPardonForm.cpp
 
 # --  Redirection in OBJS  -- #
