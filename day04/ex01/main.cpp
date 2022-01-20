@@ -22,7 +22,7 @@ a.makeSound();
 cpy->makeSound();
 
 a.printmemori();
-cpy.printmemori();
+cpy->printmemori();
 
 delete cpy;
 

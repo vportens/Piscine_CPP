@@ -12,7 +12,7 @@ int main()
 
 	src->learnMateria(new Ice());
 	src->learnMateria(new Cure());
-	// src->learnMateria(new Cure());
+	 src->learnMateria(new Cure());
 	Character* me = new Character("me");
 
 	AMateria* tmp;

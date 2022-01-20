@@ -1,14 +1,14 @@
 #include "Form.hpp"
 
-Form::Form() : _name("Default Form"), _sign(0), _gradeSign(75), _gradeExec(75) {
+Form::Form() : _name("Default Form"), _sign(0), _gradeSign(75), _gradeExec(75), _target("Default target") {
 
 }
 
-Form::Form(Form const & cpy) : _name(cpy.getName()), _gradeSign(cpy.getGradeSign()), _gradeExec(cpy.getGradeExec()) {
+Form::Form(Form const & cpy) : _name(cpy.getName()), _gradeSign(cpy.getGradeSign()), _gradeExec(cpy.getGradeExec()), _target(cpy.getTarget()){
 	_sign = cpy.is_sign();
 }
 
-Form::Form(std::string Name, int GradeSign, int GradeExec) : _name(Name), _sign(0), _gradeSign(GradeSign), _gradeExec(GradeExec) {
+Form::Form(std::string Name, int GradeSign, int GradeExec, std::string target) : _name(Name), _sign(0), _gradeSign(GradeSign), _gradeExec(GradeExec) , _target(target){
 	if (GradeExec > 150 || GradeSign > 150)
 		throw (Form::GradeTooLowException());
 
@@ -41,8 +41,20 @@ std::string	Form::getName(void)const {
 	return (_name);
 }
 
-Form &	Form::beSigned(Bureaucrat & inCharge) {
-	inCharge.signForm(*this);	
+
+std::string Form::getTarget(void) const{
+	return (_target);
+}
+
+void	Form::execution(Bureaucrat const & executor) {
+	if (is_sign() == 0)
+		return ;
+	if (executor.getGrade() > getGradeExec())
+		return ;
+	Action(_target);
+}
+
+void	Form::beSigned(Bureaucrat & inCharge) {
 	if (inCharge.getGrade() <= _gradeSign)
 	{
 		_sign = 1;
@@ -51,7 +63,6 @@ Form &	Form::beSigned(Bureaucrat & inCharge) {
 	{
 		throw (Form::GradeTooLowException());
 	}
-	return (*this);
 		
 }
 

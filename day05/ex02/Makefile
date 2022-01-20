@@ -10,7 +10,9 @@ vpath %.cpp $(foreach dir, $(SRC_DIR), $(dir):)
 
 SRCS =   main.cpp	\
 	Bureaucrat.cpp	\
-	Form.cpp	
+	Form.cpp	\
+	ShrubberyCreationForm.cpp	\
+	RobotomyRequestForm.cpp
 
 # --  Redirection in OBJS  -- #
 OBJS    = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))

@@ -8,15 +8,16 @@
 class Bureaucrat;
 
 class Form {
-	private :
+	protected :
 		std::string const	_name;
 		bool			_sign;
 		int const		_gradeSign;
 		int const		_gradeExec;
+		std::string 		_target;
 	public :
 		Form();
 		Form(Form const & cpy);
-		Form(std::string Name, int GradeSign, int GradeExec);
+		Form(std::string Name, int GradeSign, int GradeExec, std::string target);
 		~Form();
 
 		Form & operator=(Form const & cpy);
@@ -25,8 +26,12 @@ class Form {
 		int		getGradeSign()const;
 		int		getGradeExec()const;
 		std::string	getName() const;
+		std::string	getTarget()const ;
 
-		Form&		beSigned(Bureaucrat & inCharge);
+		void		execution(Bureaucrat const & executor);
+		virtual void	Action(std::string const & target) = 0;
+
+		void		beSigned(Bureaucrat & inCharge);
 
 		class Exception : public std::exception {
 			public :

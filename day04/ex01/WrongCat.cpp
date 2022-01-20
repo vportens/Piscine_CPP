@@ -2,15 +2,18 @@
 
 WrongCat::WrongCat() : WrongAnimal()  {
 	type = "WrongCat";
+	std::cout << "Default WrongAnimal constructor" << std::endl;
 }
 
 
 WrongCat::WrongCat(WrongCat const & cpy) : WrongAnimal(cpy) {
 	*this = cpy;
+	std::cout << "Copy WrongAnimal constructor" << std::endl;
 }
 
 WrongCat::~WrongCat() {
 
+	std::cout << "WrongAnimal destructor" << std::endl;
 }
 
 WrongCat&	WrongCat::operator=(WrongCat const & cpy) {
