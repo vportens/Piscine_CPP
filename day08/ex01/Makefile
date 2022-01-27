@@ -1,4 +1,4 @@
-NAME    =	Serialisation
+NAME    =	Span
 
 # --   Directory   -- #
 OBJ_DIR     =   objs
@@ -8,7 +8,8 @@ INC_DIR        =    incs
 SRC_DIR     =    $(shell find . -type d)
 vpath %.cpp $(foreach dir, $(SRC_DIR), $(dir):)
 
-SRCS =   main.cpp	
+SRCS =   main.cpp	\
+	Span.cpp
 
 # --  Redirection in OBJS  -- #
 OBJS    = $(addprefix $(OBJ_DIR)/, $(SRCS:%.cpp=%.o))
