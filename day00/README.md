@@ -1,6 +1,6 @@
 # Titre : Introduction CPP00
 
-
+## [clic here for subject](https://github.com/vportens/Piscine_CPP/blob/master/day00/CPP00.subject.pdf) 
 
 # Objectif :
 - creation premiere fonction

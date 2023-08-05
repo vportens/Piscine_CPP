@@ -1,5 +1,6 @@
 # Titre : C'est l'exception qui confirme la regle
 
+## [clic here for subject](https://github.com/vportens/Piscine_CPP/blob/master/day05/CPP05.subject.pdf) 
 # Objectif : 
 - Les exceptions
 - Plus d'heritage

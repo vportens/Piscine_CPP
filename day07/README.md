@@ -1,5 +1,6 @@
 # Titre : Template et array
 
+## [clic here for subject](https://github.com/vportens/Piscine_CPP/blob/master/day07/CPP07.subject.pdf) 
 # Objectif : 
 - introduction au template
 - utilisation des template pour des classes et fonctions
